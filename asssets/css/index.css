@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  /* Couleurs */
+  --primary-color: #72a1de;
+  --secondary-color: #2200493d;
+  --text-color: lightgray;
+  --gradient: linear-gradient(to right, #008baa, #7e42a1, #6600c5, #6070fd, #2a46ff, #0099ff, #008ead);
+  
+  /* Polices */
+  --font-primary: "Poppins", sans-serif;
+  
+  /* Tailles */
+  --body-font-size: 10px;
+  --header-height: 4.7rem;
+  --h1-font-size: 6rem;
+}
+
+/* Reset et base */
+*,::after,::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body {
+    font-family: var(--font-primary);
+    color: var(--text-color);
+    font-size: var(--body-font-size);
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.background {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+} 
+
+.cover {
+    position: fixed;
+    inset: 0;
+    background-color: #526bd82d;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3rem;
+    height: var(--header-height);
+    background-color: rgba(255, 255, 255, 0.121);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 1.5rem #72a1dea2;
+    z-index: 999;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.left img {
+    width: 4.5rem;
+    margin: 0 1.5rem;
+}
+.left h1{
+    font-size: 2rem;
+}
+header ul {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    padding: 1.5rem;
+    border-radius: 5rem;   
+    background-color: rgba(0, 0, 69, 0.326);
+    backdrop-filter: blur(1rem);
+    box-shadow: 0 0 1rem #72a1de63;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    transition: 0.3s;
+    margin: 0 1rem;
+    font-size: 1.4rem;
+}
+
+.box-icons {
+    display: flex;
+    gap: 4rem;
+}
+
+.box-icons p i {
+    color: white;
+    font-size: 2rem;
+}
+
+.box-icons p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border: 0.2rem solid var(--primary-color);
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.blackhole-box {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: -1;
+  mix-blend-mode: lighten;
+}
+
+.blackhole-box video {
+    width: 100%;
+    margin-top: -23.5%;
+}
+
+.hero {
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-height: 80vh;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 0;
+}
+
+.hero-info {
+    position: relative;
+    left: 5%;
+    width: 50%;
+}
+
+.hero-info div {
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    border-radius: 5rem;
+    border: 0.1rem solid #72a1de94;
+    width: 24rem;
+    padding: 0 1rem;
+    font-size: 1.6rem;
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 0.5rem #72a1de84;
+}
+
+.hero-info h1 {
+    font-size: var(--h1-font-size);
+    max-width: 60rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 4rem 0 3rem;
+}
+
+.hero-info p {
+    max-width: 55rem;
+    line-height: 2.5rem;
+    margin-bottom: 4rem;
+    font-size: 2rem;
+}
+
+.hero-info button {
+    color: white;
+    padding: 1.5rem 3.5rem;
+    border-radius: 1rem;
+    border: 0.1rem solid #72a1de81;
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 0.5rem #72a1de81;
+    font-size: 1.6rem;
+    cursor: pointer;
+    display: flex;
+    gap: 1rem;
+    transition: 0.3s;
+}
+.hero-info button:hover{
+    background: var(--gradient);
+    background-size: 200%;
+    animation: animate-gradient 2.5s ease infinite;
+}
+.gradient {
+    background: var(--gradient);
+    background-size: 200%;
+    background-clip: text; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 2.5s linear infinite;
+}
+
+.astronaut {
+    position: relative;
+    right: 5%;
+    height: 40rem;
+    mix-blend-mode: lighten;
+}
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.info-card {
+    flex: 1;
+    min-width: 15rem;
+    text-align: center;
+}
+
+.info-card h1 {
+    font-size: 5.5rem;
+    margin: 0 0 1rem;
+    background: var(--gradient);
+    background-size: 200%;
+    background-clip: text; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 2.5s linear infinite;
+}
+
+.info-card p {
+    font-size: 1.4rem;
+}
+/* Menu mobile */
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2.5rem;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(10px);
+    z-index: 9999;
+    display: none;
+    overflow-y: auto;
+}
+
+.mobile-menu.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-content {
+    position: relative;
+    padding: 2rem;
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.mobile-menu ul {
+    flex-direction: column;
+    gap: 3rem;
+    /* padding: 0; */
+    /* width: 100%; */
+
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    border-radius: 2rem;   
+    background-color: rgba(0, 0, 69, 0.326);
+    backdrop-filter: blur(1rem);
+    box-shadow: 0 0 1rem #72a1de63;
+}
+
+.mobile-menu ul a {
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    transition: 0.3s;
+    margin: 0 1rem;
+}
+
+.mobile-icons {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+.mobile-icons p i{
+    color: white;
+    font-size: 2rem;
+}
+.mobile-icons p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    border: 0.2rem solid var(--primary-color);
+    border-radius: 50%;
+    transition: 0.5s;
+}
+/* @media screen and (max-width: 70rem) {
+
+    
+    .box-icons {
+        display: none;
+    }
+} */
+
+@keyframes animate-gradient {
+    to { background-position: 200%; }
+}
+
+/* Responsive */
+@media (max-aspect-ratio: 16/9) {
+    .background {
+        width: auto;
+        height: 100%;
+    }
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .background {
+        width: 100%;
+        height: auto;
+    } 
+}
+
+@media screen and (max-width: 100rem) { /* 1000px */
+    .blackhole-box video {
+        margin-top: -20%;
+    }
+    
+    .hero-info h1 {
+        font-size: 4rem;
+    }
+    
+    .astronaut {
+        height: 30rem;
+    }
+    
+    .hero-info p {
+        max-width: 40rem;
+    }
+}
+
+@media screen and (max-width: 70rem) { /* 700px */
+    header ul {
+        display: none;
+    }
+    
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 10rem;
+    }
+    
+    .hero-info {
+        width: 90%;
+        left: 0;
+        margin: 0 auto;
+    }
+    
+    .hero-info div {
+        margin: 0 auto;
+    }
+    
+    .astronaut {
+        position: relative;
+        right: 0;
+        height: 25rem;
+        margin-top: 3rem;
+    }
+    
+    .about-section {
+        padding: 3rem;
+        justify-content: center;
+    }
+    
+    .box-icons {
+        display: none;
+    }
+    .menu-btn {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 48rem) { /* 480px */
+    html{
+        overflow-x: hidden;
+        width: 100vw;
+    }
+    .hero-info h1 {
+        font-size: 3.5rem;
+    }
+    
+    .hero-info p {
+        font-size: 1.8rem;
+    }
+    
+    .info-card h1 {
+        font-size: 4rem;
+    }
+    
+    .left h2 {
+        font-size: 1.8rem;
+    }
+
+}
