@@ -55,7 +55,7 @@ cd SnowDev-Portfolio-Version1
 
 ## 📸 Captures d'écran
 
-![Desktop View](assets/screenshots/desktop.png) <!-- Ajouter image -->
+![Desktop View](/asssets/img/preview.png) <!-- Ajouter image -->
 ![Mobile View](assets/screenshots/mobile.png) <!-- Ajouter image -->
 ![Menu Mobile](assets/screenshots/menu.png) <!-- Ajouter image -->
 
