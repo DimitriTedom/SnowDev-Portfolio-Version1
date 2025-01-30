@@ -1,10 +1,10 @@
 # 🌌 SnowDev Portfolio - Modern Developer Portfolio
 
-![Project Preview](assets/screenshots/preview.png) <!-- Ajouter votre image dans ce chemin -->
+![Project Preview](/asssets/img/STS%20PORTOFOLIO.png)
 
 Un portfolio moderne avec animations spatiales et design élancé, mettant en valeur des projets de développement web.
 
-## ✨ Fonctionnalités
+## ✨ Fonctionnalités Existantes
 
 - 🪐 Background vidéo galactique
 - 🌀 Animation de trou noir interactive
@@ -13,6 +13,44 @@ Un portfolio moderne avec animations spatiales et design élancé, mettant en va
 - 🚀 Sections animées (AOS library)
 - 📦 Variables CSS personnalisées
 - 🌠 Effets de flou (backdrop-filter)
+
+## 🚩 Fonctionnalités à Implémenter
+
+### Sections Manquantes
+- **📨 Formulaire de Contact**  
+  Intégration d'un formulaire avec validation et lien vers service d'email (Formspree/Netlify Forms)
+  
+- **👤 Section "À Propos"**  
+  Section détaillée avec bio, photo et parcours professionnel + timeline interactive
+
+- **🛠 Section "Compétences"**  
+  Affichage des compétences techniques avec progress bars animés et système de filtrage
+
+- **🚀 Section "Projets"**  
+  Galerie de projets avec : 
+  - Filtrage par catégorie (Web/Mobile/UI)
+  - Mode grille/liste
+  - Lightbox pour les détails
+  - Tags technologiques
+
+### Améliorations Possibles
+- **🌐 Internationalisation**  
+  Support multilingue (FR/EN) avec système de traduction
+
+- **📊 Tableau de Bord Admin**  
+  Interface d'administration pour gérer le contenu (Projets/Compétences)
+
+- **🔍 Recherche de Projets**  
+  Barre de recherche avec filtrage en temps réel
+
+- **🎨 Customisation Thème**  
+  Sélecteur de thème couleur + mode sombre/clair
+
+- **📈 Analytics Intégrés**  
+  Intégration avec Google Analytics/Plausible
+
+- **📱 PWA Features**  
+  Conversion en Progressive Web App avec offline support
 
 ## 🛠 Technologies utilisées
 
@@ -56,8 +94,7 @@ cd SnowDev-Portfolio-Version1
 ## 📸 Captures d'écran
 
 ![Desktop View](/asssets/img/preview.png) <!-- Ajouter image -->
-![Mobile View](assets/screenshots/mobile.png) <!-- Ajouter image -->
-![Menu Mobile](assets/screenshots/menu.png) <!-- Ajouter image -->
+![Mobile View](/asssets/img/preview-mobile.jpg) <!-- Ajouter image -->
 
 ## 📝 Personnalisation
 
