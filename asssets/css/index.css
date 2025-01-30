@@ -98,7 +98,9 @@ header ul a {
     margin: 0 1rem;
     font-size: 1.4rem;
 }
-
+header ul a:hover{
+    text-shadow: 0 0 15px black;
+}
 .box-icons {
     display: flex;
     gap: 4rem;
@@ -119,7 +121,11 @@ header ul a {
     border-radius: 50%;
     transition: 0.5s;
 }
-
+.box-icons p:hover{
+    background-color:#72a1de ;
+    color: black;
+    box-shadow: 0 0 15px #72a1de;
+}
 .blackhole-box {
   position: absolute;
   top: 0;
@@ -384,7 +390,7 @@ header ul a {
     }
     
     .hero {
-        flex-direction: column;
+        flex-direction: column-reverse;
         text-align: center;
         padding-top: 10rem;
     }
@@ -393,6 +399,9 @@ header ul a {
         width: 90%;
         left: 0;
         margin: 0 auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
     
     .hero-info div {
